@@ -21,4 +21,7 @@ return require('packer').startup(function(use)
   use { 'hrsh7th/cmp-nvim-lsp' } -- nvim-cmp source for nvim-lsp
   use { 'hrsh7th/cmp-buffer' } -- nvim-cmp source for buffer words
   use { 'hrsh7th/nvim-cmp' } -- Autocompletion plugin for neovim built in lsp
+
+  -- Prettier
+  use { 'sbdchd/neoformat' }
 end)
