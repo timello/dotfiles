@@ -14,8 +14,9 @@ vim.opt.incsearch = true
 vim.opt.number = true
 vim.opt.mouse = ""
 vim.opt.ruler = true
+vim.opt.errorbells = false
+vim.opt.syntax = "on"
 
--- set colorcolumn=80
 vim.opt.colorcolumn = "80"
 vim.cmd [[highlight ColorColumn ctermbg=0 guibg=lightgrey]]
 vim.cmd [[highlight clear SignColumn]]
@@ -24,6 +25,11 @@ vim.cmd [[highlight VertSplit cterm=NONE]]
 
 vim.opt.encoding = "utf-8"
 
--- set undodir
 vim.opt.undodir = vim.fn.stdpath("config") .. "/undodir"
 vim.opt.undofile = true
+
+-- remove trailing whitespace
+vim.api.nvim_create_autocmd({ "BufWritePre" }, {
+  pattern = { "*" },
+  command = [[%s/\s\+$//e]],
+})
