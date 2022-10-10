@@ -6,7 +6,8 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
-  use 'folke/tokyonight.nvim'
+  -- use 'folke/tokyonight.nvim'
+  use 'morhetz/gruvbox'
   use { 'junegunn/fzf', run = ":call fzf#install()" }
   use { 'junegunn/fzf.vim' } 
   use { 'github/copilot.vim' } 

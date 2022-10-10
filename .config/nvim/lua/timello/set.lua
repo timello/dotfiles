@@ -17,6 +17,9 @@ vim.opt.ruler = true
 
 -- set colorcolumn=80
 vim.opt.colorcolumn = "80"
+vim.cmd [[highlight ColorColumn ctermbg=0 guibg=lightgrey]]
+vim.cmd [[highlight clear SignColumn]]
+vim.cmd [[highlight LineNr ctermfg=grey]]
 vim.cmd [[highlight VertSplit cterm=NONE]]
 
 vim.opt.encoding = "utf-8"
