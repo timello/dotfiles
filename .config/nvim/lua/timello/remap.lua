@@ -8,3 +8,6 @@ nnoremap("<leader>pf", "<cmd>FZF -m<CR>")
 
 -- Buffers
 nnoremap("<leader>pb", "<cmd>Buffers<CR>")
+
+-- Coc
+nnoremap("<leader>gd", "<Plug>(coc-definition)")
