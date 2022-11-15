@@ -11,6 +11,3 @@ nnoremap("<leader>pb", "<cmd>Buffers<CR>")
 
 -- Coc
 nnoremap("<leader>gd", "<Plug>(coc-definition)")
-
--- nvim-tree
-nnoremap("<leader>pt", "<cmd>NvimTreeToggle<CR>")
