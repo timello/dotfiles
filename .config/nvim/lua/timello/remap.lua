@@ -11,3 +11,4 @@ nnoremap("<leader>pb", "<cmd>Buffers<CR>")
 
 -- Coc
 nnoremap("<leader>gd", "<Plug>(coc-definition)")
+nnoremap("<leader>gr", "<Plug>(coc-references)")
