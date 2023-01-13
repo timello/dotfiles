@@ -4,14 +4,16 @@
   "diagnostic.warningSign": "!",
   "diagnostic.infoSign": "?",
   "diagnostic.checkCurrentLine": true,
-  "coc.preferences.formatOnSaveFiletypes": [
+  "coc.preferences.formatOnSave": [
     "javascript",
     "html",
     "json",
     "css",
     "scss",
     "go",
-    "typescript"
+    "typescript",
+    "markdown",
+    "YAML"
   ],
   "languageserver": {
     "golang": {
