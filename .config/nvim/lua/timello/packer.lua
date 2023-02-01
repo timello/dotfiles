@@ -24,4 +24,5 @@ return require('packer').startup(function(use)
   }
   use { 'tpope/vim-fugitive' }
   use { 'ThePrimeagen/git-worktree.nvim' }
+  use { 'voldikss/vim-floaterm' }
 end)

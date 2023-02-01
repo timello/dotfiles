@@ -24,5 +24,6 @@
   },
   "go.goplsOptions": {
     "staticcheck": true
-  }
+  },
+  "yaml.customTags": ["!reference sequence"]
 }
