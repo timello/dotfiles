@@ -12,6 +12,7 @@ vim.opt.swapfile = false
 vim.opt.backup = false
 vim.opt.incsearch = true
 vim.opt.number = true
+vim.opt.relativenumber = true
 vim.opt.mouse = ""
 vim.opt.ruler = true
 vim.opt.errorbells = false
