@@ -34,3 +34,9 @@ vim.api.nvim_create_autocmd({ "BufWritePre" }, {
   pattern = { "*" },
   command = [[%s/\s\+$//e]],
 })
+
+-- https://github.com/neovim/neovim/issues/21771
+vim.api.nvim_create_autocmd({ "DirChanged" }, {
+  pattern = { "*" },
+  command = [[call chansend(v:stderr, printf("\033]7;file://%s\033\\", v:event.cwd))]],
+})
