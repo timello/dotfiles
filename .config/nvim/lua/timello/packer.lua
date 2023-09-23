@@ -10,7 +10,7 @@ return require('packer').startup(function(use)
   use 'morhetz/gruvbox'
   use { 'junegunn/fzf', run = ":call fzf#install()" }
   use { 'junegunn/fzf.vim' }
-  use { 'github/copilot.vim' }
+  -- use { 'github/copilot.vim' }
   use {'neoclide/coc.nvim', branch = 'release'}
   use {
     'nvim-lualine/lualine.nvim',
@@ -25,4 +25,5 @@ return require('packer').startup(function(use)
   use { 'tpope/vim-fugitive' }
   use { 'ThePrimeagen/git-worktree.nvim' }
   use { 'voldikss/vim-floaterm' }
+  use 'Exafunction/codeium.vim'
 end)
