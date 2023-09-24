@@ -1,4 +1,5 @@
 local nnoremap = require("timello.keymap").nnoremap
+local inoremap = require("timello.keymap").inoremap
 
 -- netrw
 nnoremap("<leader>pv", "<cmd>Ex<CR>")
@@ -24,3 +25,6 @@ nnoremap("<leader>ft", "<cmd>FloatermToggle<CR>")
 -- center page up and page down
 nnoremap("<C-d>", "<C-d>zz")
 nnoremap("<C-u>", "<C-u>zz")
+
+--
+inoremap("<C-g>", "<cmd>call codeium#CycleCompletions(1)<CR>")

@@ -40,3 +40,6 @@ vim.api.nvim_create_autocmd({ "DirChanged" }, {
   pattern = { "*" },
   command = [[call chansend(v:stderr, printf("\033]7;file://%s\033\\", v:event.cwd))]],
 })
+
+-- https://github.com/Exafunction/codeium.vim
+-- vim.g.codeium_disable_bindings = 1
