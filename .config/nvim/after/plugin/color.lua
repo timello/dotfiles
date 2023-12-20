@@ -4,4 +4,4 @@ vim.opt.background = "dark"
 -- this variable must be enabled for colors to be applied properly
 vim.opt.termguicolors = true
 
-vim.cmd("colorscheme gruvbox")
+-- vim.cmd("colorscheme gruvbox")
