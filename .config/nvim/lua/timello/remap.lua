@@ -10,10 +10,6 @@ nnoremap("<leader>pf", "<cmd>FZF -m<CR>")
 -- Buffers
 nnoremap("<leader>pb", "<cmd>Buffers<CR>")
 
--- Coc
-nnoremap("<leader>gd", "<Plug>(coc-definition)")
-nnoremap("<leader>gr", "<Plug>(coc-references)")
-
 -- Telescope
 nnoremap("<leader>lw", "<cmd>lua require('telescope').extensions.git_worktree.git_worktrees()<CR>")
 nnoremap("<leader>cw", "<cmd>lua require('telescope').extensions.git_worktree.create_git_worktree()<CR>")
@@ -28,3 +24,10 @@ nnoremap("<C-u>", "<C-u>zz")
 
 --
 inoremap("<C-g>", "<cmd>call codeium#CycleCompletions(1)<CR>")
+
+-- Vimspector
+nnoremap("<F9>", "<cmd>:call vimspector#Launch()<CR>")
+
+-- LSP
+nnoremap("<leader>gd", "<cmd>lua vim.lsp.buf.definition()<CR>")
+nnoremap("<leader>gr", "<cmd>lua vim.lsp.buf.references()<CR>")

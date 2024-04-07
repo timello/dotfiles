@@ -99,6 +99,16 @@ set signcolumn=yes
 autocmd CursorHold * lua vim.diagnostic.open_float(nil, { focusable = false })
 ]])
 
+-- Vimspector options
+vim.cmd([[
+let g:vimspector_sidebar_width = 85
+let g:vimspector_bottombar_height = 15
+let g:vimspector_terminal_maxwidth = 70
+]])
+
 --
 -- END: https://rsdlt.github.io/posts/rust-nvim-ide-guide-walkthrough-development-debug/
 --
+
+-- https://www.jvt.me/posts/2022/03/01/neovim-format-on-save/
+vim.cmd([[autocmd BufWritePre * lua vim.lsp.buf.format()]])
