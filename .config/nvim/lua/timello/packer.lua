@@ -48,4 +48,6 @@ return require('packer').startup(function(use)
   use 'hrsh7th/vim-vsnip'
   use 'puremourning/vimspector'
 
+  use 'nvim-treesitter/nvim-treesitter'
+
 end)
