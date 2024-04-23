@@ -19,8 +19,8 @@ nnoremap("<leader>fc", "<cmd>FloatermNew<CR>")
 nnoremap("<leader>ft", "<cmd>FloatermToggle<CR>")
 
 -- center page up and page down
-nnoremap("<C-d>", "<C-d>zz")
-nnoremap("<C-u>", "<C-u>zz")
+-- nnoremap("<C-d>", "<C-d>zz")
+-- nnoremap("<C-u>", "<C-u>zz")
 
 --
 inoremap("<C-g>", "<cmd>call codeium#CycleCompletions(1)<CR>")
