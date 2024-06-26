@@ -15,8 +15,7 @@ nnoremap("<leader>lw", "<cmd>lua require('telescope').extensions.git_worktree.gi
 nnoremap("<leader>cw", "<cmd>lua require('telescope').extensions.git_worktree.create_git_worktree()<CR>")
 
 -- vim-floaterm
-nnoremap("<leader>fc", "<cmd>FloatermNew<CR>")
-nnoremap("<leader>ft", "<cmd>FloatermToggle<CR>")
+nnoremap("<leader>ft", "<cmd>ToggleTerm<CR>")
 
 -- center page up and page down
 -- nnoremap("<C-d>", "<C-d>zz")

@@ -31,14 +31,14 @@ vim.opt.undofile = true
 
 -- remove trailing whitespace
 vim.api.nvim_create_autocmd({ "BufWritePre" }, {
-  pattern = { "*" },
-  command = [[%s/\s\+$//e]],
+        pattern = { "*" },
+        command = [[%s/\s\+$//e]],
 })
 
 -- https://github.com/neovim/neovim/issues/21771
 vim.api.nvim_create_autocmd({ "DirChanged" }, {
-  pattern = { "*" },
-  command = [[call chansend(v:stderr, printf("\033]7;file://%s\033\\", v:event.cwd))]],
+        pattern = { "*" },
+        command = [[call chansend(v:stderr, printf("\033]7;file://%s\033\\", v:event.cwd))]],
 })
 
 
@@ -48,30 +48,30 @@ vim.api.nvim_create_autocmd({ "DirChanged" }, {
 
 -- LSP Diagnostics Options Setup
 local sign = function(opts)
-  vim.fn.sign_define(opts.name, {
-    texthl = opts.name,
-    text = opts.text,
-    numhl = ''
-  })
+        vim.fn.sign_define(opts.name, {
+                texthl = opts.name,
+                text = opts.text,
+                numhl = ''
+        })
 end
 
-sign({name = 'DiagnosticSignError', text = ''})
-sign({name = 'DiagnosticSignWarn', text = ''})
-sign({name = 'DiagnosticSignHint', text = ''})
-sign({name = 'DiagnosticSignInfo', text = ''})
+sign({ name = 'DiagnosticSignError', text = '' })
+sign({ name = 'DiagnosticSignWarn', text = '' })
+sign({ name = 'DiagnosticSignHint', text = '' })
+sign({ name = 'DiagnosticSignInfo', text = '' })
 
 vim.diagnostic.config({
-    virtual_text = false,
-    signs = true,
-    update_in_insert = true,
-    underline = true,
-    severity_sort = false,
-    float = {
-        border = 'rounded',
-        source = 'always',
-        header = '',
-        prefix = '',
-    },
+        virtual_text = false,
+        signs = true,
+        update_in_insert = true,
+        underline = true,
+        severity_sort = false,
+        float = {
+                border = 'rounded',
+                source = 'always',
+                header = '',
+                prefix = '',
+        },
 })
 
 vim.cmd([[
@@ -86,8 +86,8 @@ autocmd CursorHold * lua vim.diagnostic.open_float(nil, { focusable = false })
 -- noselect: Do not select, force to select one from the menu
 -- shortness: avoid showing extra messages when using completion
 -- updatetime: set updatetime for CursorHold
-vim.opt.completeopt = {'menuone', 'noselect', 'noinsert'}
-vim.opt.shortmess = vim.opt.shortmess + { c = true}
+vim.opt.completeopt = { 'menuone', 'noselect', 'noinsert' }
+vim.opt.shortmess = vim.opt.shortmess + { c = true }
 vim.api.nvim_set_option('updatetime', 300)
 
 -- Fixed column for diagnostics to appear
