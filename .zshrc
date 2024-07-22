@@ -118,6 +118,7 @@ alias vim="nvim"
 export EDITOR='nvim'
 
 alias ls="exa"
+alias inv='nvim $(fzf -m --preview "bat --style=numbers --color=always {}")'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
