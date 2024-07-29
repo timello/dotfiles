@@ -124,3 +124,7 @@ alias inv='nvim $(fzf -m --preview "bat --style=numbers --color=always {}")'
 
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
 export PATH="/opt/homebrew/opt/node@18/bin:$PATH"
+
+. "$HOME/.atuin/bin/env"
+
+eval "$(atuin init zsh)"
