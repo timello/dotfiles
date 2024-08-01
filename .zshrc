@@ -10,7 +10,7 @@ export ZSH="$HOME/.oh-my-zsh"
 #ZSH_THEME="agnoster"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
-plugins=(git vi-mode last-working-dir fzf)
+plugins=(git vi-mode last-working-dir fzf zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -166,3 +166,5 @@ eval "$(zoxide init zsh)"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+bindkey '^ ' autosuggest-accept
