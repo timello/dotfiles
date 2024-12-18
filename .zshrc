@@ -168,3 +168,4 @@ eval "$(zoxide init zsh)"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 bindkey '^ ' autosuggest-accept
+. "$HOME/.cargo/env"
